@@ -16,14 +16,6 @@ This project involves the following steps:
 
 5. **Customer Segmentation:** The results of the clustering and classification were used to segment customers based on their purchasing behaviours.
 
-## Installation
-
-Include the requirements and installation instructions for the software needed to run your project.
-
-## Usage
-
-Explain how to use your project. Provide code examples, screenshots or command line examples.
-
 ## Results
 
 The project successfully segmented customers into 24 distinct clusters. The results showed that Random Forest, Gradient Boosting, and Decision Tree classifiers predict better customer behaviours concerning the categories they purchased. The clusters formed were distinct and showed varied behaviors such as buying from a single category or buying frequently.

@@ -1,5 +1,35 @@
-# Anticipating-New-customer-s-purchases
-## Thesis
-This report is submitted in partial fulfilment of the requirement for the degree of Master of Science in 7COM1075 Data Science and Analytics at the University of Hertfordshire (UH)
+# Customer Segmentation using Machine Learning 
 
-As more and more people are inclined towards purchasing from e-commerce stores, causing an increase in e-commerce platforms, it is becoming essential for eCommerce organisations to build up strategies to survive the competition. Effective Marketing plays a key role for companies in retaining customers and increasing overall sales volume. However, there's no one-size-fits-all regarding effective marketing, and different strategies will appeal to different customers. Companies segment customers into similar subsets based on their purchasing habits to efficiently develop effective marketing strategies that appeal to different types of customers to deal with this heterogeneity. However, since clustering algorithms tend to be non-parametric, they need to be re-run for every new customer unless a parametric model is developed to learn the mapping between customer purchasing habits and their respective clusters. This study aims to segment customers into clusters using non-parametric k-means clustering and train and validate multiple parametric machine learning models to predict the segments for future customers of an e-commerce company in Pakistan. Validation results show that the Random Forest classifier produced the highest weighted average precision, followed by gradient boosting and decision trees. An ensemble model based on the results of the three best models was also implemented; it was predicted with a precision of 98.75%, which is greater than any of the three classifiers and is very satisfactory. Since forward runs of a trained classifier are much faster than re-segmenting customers, this method also allows companies to reap the benefits of customer segmentation for future customers.
+This project demonstrates the power of machine learning to perform customer segmentation based on purchasing behaviour. Our dataset includes information about the number of transactions, unique customers, unique products, and categories. The data was analyzed to find patterns, such as the percentage of cancelled orders and the frequency of orders from different categories.
+
+## Project Overview 
+
+This project involves the following steps:
+
+1. **Data Preprocessing:** The dataset was first separated to isolate cancelled orders from the main dataset. This processed dataset includes data for 79,309 unique customers who bought 62,531 unique products in 202,314 transactions.
+
+2. **Clustering:** The K-Means algorithm was used for clustering. The Elbow method and the Silhouette score determined the optimal number of clusters.
+
+3. **Classification:** Multiple machine learning classifiers were trained, including Support Vector Classifier, Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, AdaBoost Classifier and Ensemble voting classifier. These classifiers were evaluated based on precision, recall, f1 score and accuracy metrics.
+
+4. **Testing:** The classifiers were tested on a separate dataset. The accuracy of these classifiers was then determined.
+
+5. **Customer Segmentation:** The results of the clustering and classification were used to segment customers based on their purchasing behaviours.
+
+## Installation
+
+Include the requirements and installation instructions for the software needed to run your project.
+
+## Usage
+
+Explain how to use your project. Provide code examples, screenshots or command line examples.
+
+## Results
+
+The project successfully segmented customers into 24 distinct clusters. The results showed that Random Forest, Gradient Boosting, and Decision Tree classifiers predict better customer behaviours concerning the categories they purchased. The clusters formed were distinct and showed varied behaviors such as buying from a single category or buying frequently.
+
+## Conclusion and Future Work
+
+This project presents a promising effect of using machine learning on customer segmentation. The segmentation can help businesses devise marketing strategies, manage supply and demand, and identify products associated with specific segments. 
+
+In the future, additional analysis can be performed to understand the relationship between future orders from previous orders, the geographical location of orders, and customer demographics.
